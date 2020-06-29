@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+djangorestframework = "*"
+psycopg2-binary = "*"
+dj-database-url = "*"
+ipython = "*"
+pdfkit = "*"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+db = "docker-compose up -d converter-db"
+api = "docker-compose up -d --build converter-api"
