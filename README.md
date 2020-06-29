@@ -1,4 +1,4 @@
-# Test converter backend application
+# Simple html to pdf converter api
 
 ## Set up application
 0. For development purposes install `pipenv` (for system, not for current environment)
@@ -8,8 +8,6 @@
  - `POSTGRES_USER`
  - `POSTGRES_PASSWORD`
  - `POSTGRES_DB`
-
-
 
 ## local
 1. Install wkhtmltopdf for mac `brew cask install wkhtmltopdf`
@@ -22,11 +20,6 @@
 Now you can use shortcuts:
  - `pipenv run db` - run container with DB
  - `pipenv run api` - run container with API
-
-## Install pre-commit hooks 
-1. `pip install -r requirements-dev.txt`
-2. `pre-commit install`
-
 
 ## How use 
 endpoint http://localhost:8000/api/v1/convert/html POST request with body `link` or `file`
