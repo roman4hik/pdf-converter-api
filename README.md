@@ -16,10 +16,15 @@
  
  
 ## Docker
+#### With pipenv
 1. For activation env `pipenv shell`
 Now you can use shortcuts:
  - `pipenv run db` - run container with DB
  - `pipenv run api` - run container with API
+#### Or you can use docker-compose commands
+ - run api `docker-compose up -d --build converter-api`,
+ - run db `docker-compose up -d converter-db`,
+
 
 ## How use 
 endpoint http://localhost:8000/api/v1/convert/html POST request with body `link` or `file`
